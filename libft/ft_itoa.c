@@ -1,37 +1,56 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kpersich <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/01/11 12:24:38 by kpersich          #+#    #+#             */
-/*   Updated: 2021/01/18 11:46:28 by kpersich         ###   ########.fr       */
+/*   Created: 2021/01/18 10:38:30 by kpersich          #+#    #+#             */
+/*   Updated: 2021/01/18 12:45:52 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+static size_t	ft_len(int n)
 {
-	size_t i;
-	size_t n;
+	size_t	i;
 
+	if (n == 0)
+		return (1);
 	i = 0;
-	n = 0;
-	if (!dst || !src)
-		return (0);
-	while (src[i] != '\0')
+	if (n < 0)
+		i++;
+	while (n)
 	{
+		n = n / 10;
 		i++;
 	}
-	if (dstsize == 0)
-		return (i);
-	while (src[n] != '\0' && n < dstsize - 1)
-	{
-		dst[n] = src[n];
-		n++;
-	}
-	dst[n] = '\0';
 	return (i);
+}
+
+char			*ft_itoa(int n)
+{
+	size_t	i;
+	size_t	k;
+	char	*str;
+
+	i = ft_len(n);
+	if (!(str = (char *)malloc(i + 1)))
+		return (NULL);
+	str[i] = '\0';
+	if (n < 0)
+	{
+		str[0] = '-';
+		k = 1;
+	}
+	else
+		k = 0;
+	while (i > k)
+	{
+		i--;
+		str[i] = '0' + n % 10 * (n < 0 ? -1 : 1);
+		n = n / 10;
+	}
+	return (str);
 }
