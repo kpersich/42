@@ -1,0 +1,6 @@
+Credentials cache: API:2397AD46-FF46-4D75-99DD-1DC682590F28
+        Principal: kpersich@42ROMA.IT
+
+  Issued                Expires               Principal
+Nov 24 15:52:49 2020  Nov 25 01:52:49 2020  krbtgt/42ROMA.IT@42ROMA.IT
+Nov 24 15:52:51 2020  Nov 25 01:52:49 2020  HTTP/storage.42roma.it@42ROMA.IT
