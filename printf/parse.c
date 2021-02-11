@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:21:01 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/09 18:52:12 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/10 11:46:05 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,7 @@ int	parse_precision(const char *format, va_list arg, t_option *option)
 	int i;
 
 	i = 0;
-	if (!*format)
-		return (0);
-	else if (!(*format++ == '.'))
+	if ((!*format) || !(*format++ == '.'))
 		return (0);
 	else if (*format == '*')
 	{

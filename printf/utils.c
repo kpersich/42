@@ -6,8 +6,21 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 15:09:21 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/09 15:43:13 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/11 17:53:11 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+void	filling(char fill, int size, int *len)
+{
+	int i;
+
+	i = 0;
+	while (i < size)
+	{
+		write(1, &fill, 1);
+		(*len)++;
+		i++;
+	}
+}

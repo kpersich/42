@@ -1,13 +1,14 @@
 NAME = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRCS = ft_lib.c ft_printf.c parse.c process.c
+SRCS = ft_lib.c ft_lib2.c ft_printf.c parse.c process.c utils.c
 OBJS = ${SRCS:.c=.o}
-
-all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar -rc $(NAME) $(OBJS)
+
+	
+all: $(NAME)
 
 clean:
 	rm -f $(OBJS)
