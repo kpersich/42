@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/12 12:08:42 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/12 17:54:25 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 19:03:52 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ void	process_hex(int *len, va_list arg, t_option *option, char *base)
 	if ((!option->minus) && (option->zero && option->precision == -1))
 		filling('0', option->width - k, len);
 	if ((!option->minus) && !(option->zero && option->precision == -1))
-		filling(' ', option->width - (MAX(option->precision, k)), len);
+		filling(' ', option->width - (max(option->precision, k)), len);
 	if (option->precision != -1)
 		filling('0', option->precision - k, len);
 	if (!(num == 0 && option->precision == 0))
 		write(1, ch, k);
 	if (option->minus)
 		filling(' ', option->width - (option->precision != -1 ?
-		MAX(option->precision, k) : k), len);
+		max(option->precision, k) : k), len);
 	(*len) += k;
 	free(ch);
 }
@@ -60,7 +60,7 @@ int		print_pflag(t_option *option, int *len, char *ch, long long int num)
 	if ((!option->minus) && (option->zero && option->precision == -1))
 		filling('0', option->width - k, len);
 	if ((!option->minus) && !(option->zero && option->precision == -1))
-		filling(' ', option->width - (MAX(option->precision, k)), len);
+		filling(' ', option->width - (max(option->precision, k)), len);
 	if (!option->zero)
 		write(1, "0x", 2);
 	if (option->precision != -1)
@@ -69,7 +69,7 @@ int		print_pflag(t_option *option, int *len, char *ch, long long int num)
 		write(1, ch, k);
 	if (option->minus)
 		filling(' ', option->width - (option->precision != -1 ?
-		MAX(option->precision, k) : k), len);
+		max(option->precision, k) : k), len);
 	return (k);
 }
 

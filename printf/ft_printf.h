@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:12:20 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/12 18:16:31 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 19:05:34 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,6 @@
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
-
-# define MIN(x, y) x > y ? y : x
-# define MAX(x, y) x > y ? x : y
-# define ABS(x) x < 0 ? -x : x
 
 typedef struct	s_option
 {
@@ -29,6 +25,8 @@ typedef struct	s_option
 	char	type;
 }				t_option;
 
+int				max(int x, int y);
+int				min(int x, int y);
 int				ft_strlen(const char *s);
 int				ft_atoi(const char *str);
 int				ft_isdigit(int c);

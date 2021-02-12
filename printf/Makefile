@@ -7,7 +7,6 @@ OBJS = ${SRCS:.c=.o}
 $(NAME): $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 
-	
 all: $(NAME)
 
 clean:

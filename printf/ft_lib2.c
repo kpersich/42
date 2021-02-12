@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:03:03 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/12 18:14:35 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 19:08:19 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,15 +83,16 @@ char			*ft_hitoa(unsigned long long int n, char *base)
 	return (str);
 }
 
-void			filling(char fill, int size, int *len)
+int				max(int x, int y)
 {
-	int i;
+	if (x > y)
+		return (x);
+	return (y);
+}
 
-	i = 0;
-	while (i < size)
-	{
-		write(1, &fill, 1);
-		(*len)++;
-		i++;
-	}
+int				min(int x, int y)
+{
+	if (x > y)
+		return (y);
+	return (x);
 }

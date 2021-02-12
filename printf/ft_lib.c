@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:17:27 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/12 18:11:54 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 19:11:39 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,4 +73,17 @@ char	*ft_strchr(const char *s, int c)
 	if (s[i] == ((char)c))
 		return (&((char *)s)[i]);
 	return (NULL);
+}
+
+void	filling(char fill, int size, int *len)
+{
+	int i;
+
+	i = 0;
+	while (i < size)
+	{
+		write(1, &fill, 1);
+		(*len)++;
+		i++;
+	}
 }
