@@ -86,3 +86,4 @@ void	process_pointer(int *len, va_list arg, t_option *option)
 	(*len) += k + 2;
 	free(ch);
 }
+
