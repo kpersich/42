@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:18:17 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/11 17:15:14 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 17:55:45 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ void		process_option(int *len, va_list arg, t_option *option)
 		process_decimal(len, arg, option);
 	else if (option->type == 'u')
 		process_un_decimal(len, arg, option);
-/*
 	else if (option->type == 'x')
 		process_hex_low(len, arg, option);
 	else if (option->type == 'X')
@@ -43,7 +42,6 @@ void		process_option(int *len, va_list arg, t_option *option)
 		process_pointer(len, arg, option);
 	else if (option->type == '%')
 		process_percent(len, option);
-*/
 }
 
 static int	process_arg(const char *format, va_list arg, int *len)

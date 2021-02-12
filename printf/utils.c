@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 15:09:21 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/11 17:53:11 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 18:06:29 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,16 @@ void	filling(char fill, int size, int *len)
 		(*len)++;
 		i++;
 	}
+}
+
+void	process_percent(int *len, t_option *option)
+{
+	if (!option->minus && option->zero)
+		filling('0', option->width - 1, len);
+	if (!option->minus && !option->zero)
+		filling(' ', option->width - 1, len);
+	write(1, "%", 1);
+	(*len)++;
+	if (option->minus)
+		filling(' ', option->width - 1, len);
 }

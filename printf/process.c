@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/05 15:22:01 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/11 19:36:22 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 16:03:32 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int		print_dflag(t_option *option, int *len, char *ch, long int num)
 	if (!(num == 0 && option->precision == 0))
 		write(1, ch, k);
 	if (option->minus)
-		filling(' ', option->width - (option->precision >= 0 ?
+		filling(' ', option->width - (option->precision != -1 ?
 		MAX(option->precision, k) : k), len);
 	return (k);
 }
@@ -114,7 +114,7 @@ void	process_un_decimal(int *len, va_list arg, t_option *option)
 	int				k;
 
 	num = (va_arg(arg, int));
-	ch = ft_uitoa(num);
+	ch = ft_litoa(num);
 	k = ft_strlen(ch);
 	if (num == 0 && option->precision == 0)
 		k = 0;
@@ -127,7 +127,7 @@ void	process_un_decimal(int *len, va_list arg, t_option *option)
 	if (!(num == 0 && option->precision == 0))
 		write(1, ch, k);
 	if (option->minus)
-		filling(' ', option->width - (option->precision >= 0 ?
+		filling(' ', option->width - (option->precision != -1 ?
 		MAX(option->precision, k) : k), len);
 	(*len) += k;
 	free(ch);

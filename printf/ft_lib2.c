@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:03:03 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/11 17:25:02 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 16:58:46 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,45 +55,30 @@ char			*ft_litoa(long int n)
 	return (str);
 }
 
-static size_t	ft_ulen(unsigned int n)
+char			*ft_hitoa(unsigned long long int n, char *base)
 {
-	size_t	i;
+	size_t					i;
+	unsigned long long int	nb;
+	char					*str;
 
-	if (n == 0)
-		return (1);
 	i = 0;
-	if (n < 0)
-		i++;
-	while (n)
-	{
-		n = n / 10;
-		i++;
-	}
-	return (i);
-}
-
-char			*ft_uitoa(unsigned int n)
-{
-	size_t	i;
-	size_t	k;
-	char	*str;
-
-	i = ft_ulen(n);
+	nb = n;
+	if (n == 0)
+		i = 1;
+	else
+		while (nb)
+		{
+			nb /= 16;
+			i++;
+		}
 	if (!(str = (char *)malloc(i + 1)))
 		return (NULL);
 	str[i] = '\0';
-	if (n < 0)
-	{
-		str[0] = '-';
-		k = 1;
-	}
-	else
-		k = 0;
-	while (i > k)
+	while (i != 0)
 	{
 		i--;
-		str[i] = '0' + n % 10 * (n < 0 ? -1 : 1);
-		n = n / 10;
+		str[i] = *(n % 16 + base);
+		n /= 16;
 	}
 	return (str);
 }
