@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 12:03:03 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/12 16:58:46 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 18:14:35 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,4 +81,17 @@ char			*ft_hitoa(unsigned long long int n, char *base)
 		n /= 16;
 	}
 	return (str);
+}
+
+void			filling(char fill, int size, int *len)
+{
+	int i;
+
+	i = 0;
+	while (i < size)
+	{
+		write(1, &fill, 1);
+		(*len)++;
+		i++;
+	}
 }

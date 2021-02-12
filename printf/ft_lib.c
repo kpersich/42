@@ -6,7 +6,7 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:17:27 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/09 18:05:09 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 18:11:54 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,18 +73,4 @@ char	*ft_strchr(const char *s, int c)
 	if (s[i] == ((char)c))
 		return (&((char *)s)[i]);
 	return (NULL);
-}
-
-void	ft_putstr_fd(char *s, int fd)
-{
-	int i;
-
-	i = 0;
-	if (!s)
-		return ;
-	while (s[i] != '\0')
-	{
-		write(fd, &s[i], 1);
-		i++;
-	}
 }

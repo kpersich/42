@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra
-SRCS = ft_lib.c ft_lib2.c ft_printf.c parse.c process.c process2.c utils.c
+SRCS = ft_printf.c ft_lib.c ft_lib2.c parse.c process.c process2.c
 OBJS = ${SRCS:.c=.o}
 
 $(NAME): $(OBJS)

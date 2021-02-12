@@ -6,13 +6,13 @@
 /*   By: kpersich <kpersich@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 16:21:01 by kpersich          #+#    #+#             */
-/*   Updated: 2021/02/10 11:46:05 by kpersich         ###   ########.fr       */
+/*   Updated: 2021/02/12 18:14:46 by kpersich         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	parse_flag(const char *format, t_option *option)
+int		parse_flag(const char *format, t_option *option)
 {
 	int i;
 
@@ -30,7 +30,7 @@ int	parse_flag(const char *format, t_option *option)
 	return (i);
 }
 
-int	parse_width(const char *format, va_list arg, t_option *option)
+int		parse_width(const char *format, va_list arg, t_option *option)
 {
 	int i;
 
@@ -56,7 +56,7 @@ int	parse_width(const char *format, va_list arg, t_option *option)
 	}
 }
 
-int	parse_precision(const char *format, va_list arg, t_option *option)
+int		parse_precision(const char *format, va_list arg, t_option *option)
 {
 	int i;
 
@@ -84,7 +84,7 @@ int	parse_precision(const char *format, va_list arg, t_option *option)
 	}
 }
 
-int	parse_type(const char *format, t_option *option)
+int		parse_type(const char *format, t_option *option)
 {
 	if (!format)
 		return (0);
@@ -94,4 +94,16 @@ int	parse_type(const char *format, t_option *option)
 		return (1);
 	}
 	return (0);
+}
+
+void	process_percent(int *len, t_option *option)
+{
+	if (!option->minus && option->zero)
+		filling('0', option->width - 1, len);
+	if (!option->minus && !option->zero)
+		filling(' ', option->width - 1, len);
+	write(1, "%", 1);
+	(*len)++;
+	if (option->minus)
+		filling(' ', option->width - 1, len);
 }
