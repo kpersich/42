@@ -4,7 +4,7 @@ int main (int argc, char **argv)
 {
 	int i;
 	int j;
-	char used[255];
+	int used[255];
 
 	if (argc == 3)
 	{
