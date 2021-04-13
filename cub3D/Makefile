@@ -10,7 +10,7 @@ OBJS = ${SRCS:.c=.o}
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) -Lmlx -lmlx -framework OpenGL -framework AppKit -o $(NAME) $(OBJS)
+	$(CC) -lmlx -framework OpenGL -framework AppKit -o $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)

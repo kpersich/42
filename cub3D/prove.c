@@ -1,4 +1,4 @@
-#include <mlx.h>
+#include "libcub.h"
 
 /*int	main(void)
 {
@@ -39,16 +39,16 @@ int				main(void)
 	int y = 0;
 
 	var.mlx = mlx_init();
-    var.mlx_win = mlx_new_window(var.mlx, 1920, 1080, "Hello world!");
-    img.img = mlx_new_image(var.mlx, 1920, 1080);
+    var.mlx_win = mlx_new_window(var.mlx, 640, 480, "Hello world!");
+    img.img = mlx_new_image(var.mlx, 640, 480);
     img.addr = mlx_get_data_addr(img.img, &img.bits_per_pixel, &img.line_length,
                                  &img.endian);
 	while (y < 100)
 	{
 		x = 0;
-		while(x < 100)
+		while(x < 50)
 		{
-    		my_mlx_pixel_put(&img, 500 + x, 500 + y, 0x00FF0000);
+    		my_mlx_pixel_put(&img, 320 + x, 240 + y, 0x00FF0000);
 			x++;
 		}
 		y++;
