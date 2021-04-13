@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpersich <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kpersich  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/16 19:04:20 by kpersich          #+#    #+#             */
 /*   Updated: 2021/01/16 19:06:19 by kpersich         ###   ########.fr       */

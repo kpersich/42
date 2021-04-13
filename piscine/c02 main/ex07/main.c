@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpersich <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kpersich  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 11:16:35 by kpersich          #+#    #+#             */
 /*   Updated: 2020/12/03 12:21:46 by kpersich         ###   ########.fr       */

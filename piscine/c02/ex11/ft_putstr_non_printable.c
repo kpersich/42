@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpersich <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kpersich  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/09 09:42:24 by kpersich          #+#    #+#             */
 /*   Updated: 2020/12/09 10:13:19 by kpersich         ###   ########.fr       */

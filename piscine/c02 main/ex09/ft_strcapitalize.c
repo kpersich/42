@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpersich <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kpersich  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 14:57:31 by kpersich          #+#    #+#             */
 /*   Updated: 2020/12/09 09:26:22 by kpersich         ###   ########.fr       */

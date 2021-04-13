@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_div_mod.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kpersich <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: kpersich  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 18:04:24 by kpersich          #+#    #+#             */
 /*   Updated: 2020/12/06 10:52:41 by kpersich         ###   ########.fr       */

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffacilla <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ffacilla  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 10:22:45 by ffacilla          #+#    #+#             */
 /*   Updated: 2020/12/03 10:24:27 by ffacilla         ###   ########.fr       */

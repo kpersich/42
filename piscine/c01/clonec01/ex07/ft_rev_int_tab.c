@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amazzei <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: amazzei  <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/29 18:18:16 by amazzei           #+#    #+#             */
 /*   Updated: 2020/11/29 20:19:00 by amazzei          ###   ########.fr       */

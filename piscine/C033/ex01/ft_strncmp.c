@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raccoman <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raccoman  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 15:46:36 by raccoman          #+#    #+#             */
 /*   Updated: 2020/12/07 12:27:00 by raccoman         ###   ########.fr       */

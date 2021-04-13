@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffacilla <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ffacilla  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/03 10:25:12 by ffacilla          #+#    #+#             */
 /*   Updated: 2020/12/03 10:25:26 by ffacilla         ###   ########.fr       */

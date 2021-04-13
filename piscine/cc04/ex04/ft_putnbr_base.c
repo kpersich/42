@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ffacilla <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ffacilla  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/04 13:50:55 by ffacilla          #+#    #+#             */
 /*   Updated: 2020/12/07 16:35:05 by ffacilla         ###   ########.fr       */

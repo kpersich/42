@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: raccoman <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: raccoman  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/01 15:46:48 by raccoman          #+#    #+#             */
 /*   Updated: 2020/12/07 12:35:49 by raccoman         ###   ########.fr       */

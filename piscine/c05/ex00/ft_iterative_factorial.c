@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vbuonvin <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vbuonvin  <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/10 11:42:06 by vbuonvin          #+#    #+#             */
 /*   Updated: 2020/12/10 13:01:18 by vbuonvin         ###   ########.fr       */
